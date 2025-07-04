@@ -1,0 +1,287 @@
+/* CARRUSEL */
+.custom-carousel img {
+  max-height: 300px;
+  object-fit: cover;
+}
+.custom-carousel {
+  margin-bottom: 2rem;
+}
+
+/* LOGO NAVBAR */
+.logo-navbar {
+  height: 90px;
+}
+
+/* NAVBAR COLOR */
+.navbar-custom {
+  background-color: #fcf1f0 !important;
+}
+
+/* TÍTULO CENTRAL */
+.titulo-centrado {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* TARJETA MADRE */
+.tarjeta-madre {
+  background-color: #fff0f0;
+  padding: 40px 20px;
+  margin: 40px auto;
+  border-radius: 20px;
+  max-width: 1400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* TARJETAS */
+.card {
+  background-color: #fcf1f0;
+  border: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* TITULOS TARJETA */
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* IMÁGENES */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* IGUALAR TAMAÑO DE IMÁGENES EN TARJETAS */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* FONDO POST CARRUSEL */
+.post-carrusel-section {
+  background-color: #fcf1f0;
+  padding: 40px 20px;
+}
+
+/* FOOTER */
+.footer-custom {
+  background-color: #fcf1f0;
+  color: #333;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Tabla de mitos y realidades */
+.tabla-mitos th {
+  background-color: #fff0f0;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tabla-mitos td {
+  vertical-align: middle;
+  background-color: #fff0f0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* TÍTULOS CENTRADOS */
+.titulo-centrado {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* FONDO TARJETAS */
+.card {
+  background-color: #fcf1f0;
+}
+
+/* COLOR PERSONALIZADO PARA NAVBAR */
+.navbar-custom {
+  background-color: #fcf1f0 !important;
+}
+.card-body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #fcf1f0;
+}
+.container {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.container-boton {
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 25px;
+    right: 25px;
+    padding: 25px;
+    transition: bottom 0.5s ease, opacity 0.5s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container-boton img.boton {
+    width: 60px;
+    height: 60px;
+}
+
+.container-boton.hidden {
+    bottom: -100px;
+    opacity: 0;
+}
+
+.container-boton.visible {
+    animation: bounceIn 0.8s ease-in-out;
+}
+
+.container-boton:hover {
+    transform: scale(1.25);
+    transition: 0.3s;
+}
+
+.container-boton.start {
+    animation: growIn 1s ease-out forwards;
+}
+
+@keyframes bounceIn {
+    0% { transform: translateY(100px); opacity: 0; }
+    60% { transform: translateY(-20px); opacity: 1; }
+    80% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes growIn {
+    0% { transform: scale(0); opacity: 0; }
+    20% { transform: scale(0.3); opacity: 0.3; }
+    40% { transform: scale(0.6); opacity: 0.6; }
+    60% { transform: scale(1.2); opacity: 0.8; }
+    80% { transform: scale(0.95); opacity: 0.9; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .container-boton {
+        bottom: 25px;
+        right: 25px;
+        padding: 22px;
+    }
+
+    .container-boton img.boton {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-boton {
+        bottom: 15px;
+        right: 15px;
+        padding: 15px;
+    }
+
+    .container-boton img.boton {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.tarjetas-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+
+}
+
+.tarjeta {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  border-top: 8px solid #fcf1f0; /* Morado fuerte */
+  position: relative;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tarjeta h3 {
+  background-color: #ffedec;
+  color:black;
+  margin: -20px -20px 10px -20px;
+  padding: 10px 0;
+  border-radius: 8px 8px 0 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tarjeta ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+  text-align: left;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tarjeta li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tarjeta button {
+  background-color: #fcf1f0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tarjeta button:hover {
+  background-color: #faebe9;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.garantia {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+.boton-personalizado {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fcf1f0;
+  border: 2px solid #e0cfcf;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.boton-personalizado:hover {
+  background-color: #f4dede;
+  transform: scale(1.05);
+}
+
+.botones-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px 0;
+}
